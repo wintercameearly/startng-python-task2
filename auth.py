@@ -41,14 +41,14 @@ def picked_password_verification():
 
 
 def store_user_data(full_name, email, password):
-    # Empty list with user details
+    # Dict with user details
     user_info = {"Full name ": full_name, "Email": email, "Password": password}
     employee_data.append(user_info)
     display_user_data()
 
 
 def display_user_data():
-    # Loop to check if users want to add more data before it is displayed
+    # Check if users want to add more data before it is displayed
     terminate = input("Data Entry Complete ?  Y or N - ").upper()
     if terminate == 'Y':
         print("------USERS------")
